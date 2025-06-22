@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>📚 Study Hub</title>
+
+  <!-- Google Fonts 예시 ― 필요 없으면 삭제 OK -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#0f766e;   /* 메인 포인트 컬러 */
+      --link:#2563eb;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:'Poppins',system-ui, sans-serif;
+      margin:0 auto;
+      max-width: 840px;
+      padding:3rem 1.25rem;
+      line-height:1.6;
+      background:#f9fafb;
+      color:#111827;
+    }
+    h1{
+      font-size:2rem;
+      color:var(--accent);
+      margin:0 0 1.5rem;
+    }
+    ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    li{
+      background:#fff;
+      margin-bottom:0.75rem;
+      border-radius:0.75rem;
+      box-shadow:0 2px 4px rgba(0,0,0,.06);
+      transition:transform .15s;
+    }
+    li:hover{transform:translateY(-2px)}
+    a{
+      display:block;
+      padding:1rem 1.25rem;
+      text-decoration:none;
+      color:var(--link);
+      font-weight:600;
+    }
+    a span{
+      font-weight:400;
+      color:#6b7280;
+      margin-left:0.4rem;
+    }
+    @media (prefers-color-scheme:dark){
+      body{background:#111827;color:#e5e7eb}
+      li{background:#1f2937;box-shadow:none}
+      a{color:#60a5fa}
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 Study Hub</h1>
+  <p>주요 치트시트와 노트를 한곳에 모았습니다. 필요한 항목을 선택하세요!</p>
+
+  <ul>
+    <!-- ① 기존 전이단 치트시트 -->
+    <li><a href="transfer_unit_cheatsheet.html">Transfer-Unit Cheat-Sheet</a></li>
+
+    <!-- ② 새 파일을 추가했다면 이런 식으로 기입 -->
+    <!-- <li><a href="heat_transfer_cheatsheet.html">Heat-Transfer Cheat-Sheet <span>(NEW)</span></a></li> -->
+  </ul>
+
+  <footer style="margin-top:3rem;font-size:.875rem;color:#6b7280">
+    © 2025 Banseok Jeong&nbsp;·&nbsp;Powered by GitHub Pages
+  </footer>
+
+</body>
+</html>
